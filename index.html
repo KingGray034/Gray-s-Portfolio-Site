@@ -1,315 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Dennis Favour - Full Stack Developer specializing in web and mobile apps.">
-    <meta name="keywords" content="Portfolio, Full Stack Developer, Web Developer, Mobile App Developer, React, Node.js, JavaScript, Dennis Favour">
-    <meta name="author" content="Dennis Favour">
-    <link rel="preload" as="style" href="src/css/styles.css" onload="this.onload=null;this.rel='stylesheet'">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Dennis Favour | Full Stack Developer</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dennis Favour — Full Stack Engineer based in Abuja, Nigeria. I build web applications, APIs, and AI-integrated tools end to end." />
+  <meta name="author" content="Dennis Favour" />
+  <meta name="keywords" content="Full Stack Engineer, Next.js, TypeScript, React, Node.js, tRPC, Prisma, Supabase, Abuja, Nigeria" />
+  <meta property="og:title" content="Dennis Favour · Full Stack Engineer" />
+  <meta property="og:description" content="Full Stack Engineer based in Abuja, Nigeria. Building complete web systems from database to deployed product." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://kinggray034.github.io/Gray-s-Portfolio-Site/" />
+  <meta property="og:image" content="https://kinggray034.github.io/Gray-s-Portfolio-Site/src/assets/og-image.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Dennis Favour · Full Stack Engineer" />
+  <meta name="twitter:description" content="Full Stack Engineer based in Abuja, Nigeria." />
+  <title>Dennis Favour · Full Stack Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@1,400&family=IBM+Plex+Mono:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/styles.css" />
 </head>
 <body>
-    <!-- Background animations -->
-     <div class="bg-animation" id="bgAnimation"></div>
-     <div class="interactive-bg" id="interactiveBg"></div>
-    <!-- Nav Bar -->
-    <nav>
-        <div class="nav-left">
-            <a href="#">Dennis Favour</a>
+
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- ── NAV ──────────────────────────────────────────────────── -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <div class="nav-brand">
+        <span class="nav-sig">G.</span>
+        <span class="nav-name">Dennis Favour</span>
+      </div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="nav-hire">Hire Me</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── HERO ─────────────────────────────────────────────────── -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-sig" aria-hidden="true">G</div>
+    <div class="hero-inner">
+      <span class="hero-label">// Full Stack Engineer</span>
+      <h1 class="hero-name">
+        DENNIS<br>FAVOUR<span class="gold">.</span>
+      </h1>
+      <div class="hero-tagline-wrap">
+        <div class="hero-rule"></div>
+        <p class="hero-tagline">Full stack, end to end. From database schema to deployed product.</p>
+      </div>
+      <div class="hero-meta">
+        <span>Abuja, NG</span>
+        <span class="dot">·</span>
+        <span>Remote</span>
+        <span class="dot">·</span>
+        <span class="gold">Open to work</span>
+      </div>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-gold">View Work</a>
+        <a href="src/assets/Dennis_Favour_CV.pdf" class="btn btn-outline" download>Download CV</a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch →</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/KingGray034" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/dennis-favour/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://x.com/HeisGrayy" target="_blank" rel="noopener">Twitter</a>
+        <a href="mailto:dennis.s.favour@gmail.com">Email</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ─────────────────────────────────────────────────── -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-label">// Who I am</div>
+      <div class="about-grid">
+        <div class="about-text fade-in">
+          <h2 class="section-heading">ABOUT<span class="gold">.</span></h2>
+          <p class="about-intro">I'm a Full Stack Engineer based in Abuja, Nigeria. My job is building complete systems — the frontend, backend, database, and everything connecting them.</p>
+          <p class="about-body">My main stack is Next.js, TypeScript, tRPC, Prisma, and Supabase. My most recent project is Billet, a job tracking tool with AI-powered resume analysis and Gmail integration. I also work on NudgePal, a task assistant designed for neurodivergent users. I'm drawn to projects where the frontend and backend need to be designed together from the start — that's where most of the interesting problems live.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-n">2+</span>
+              <span class="stat-l">Years building</span>
+            </div>
+            <div class="stat">
+              <span class="stat-n">4</span>
+              <span class="stat-l">Projects shipped</span>
+            </div>
+          </div>
         </div>
-        <div class="nav-right">
-            <ul class="nav-links">
-                <li>
-                    <a href="https://github.com/KingGray034" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-github" aria-hidden="true"></i>
-                        <span>Github</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://linkedin.com/in/favour-dennis-10923b350/" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-linkedin" aria-hidden="true"></i>
-                        <span>LinkedIn</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://x.com/HeisGrayy" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-x-twitter" aria-hidden="true"></i>
-                        <span>Twitter</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="mailto:dennis.s.favour@gmail.com">
-                        <i class="fas fa-envelope" aria-hidden="true"></i>
-                        <span>Email</span>
-                    </a>
-                </li>
-            </ul>
+        <div class="about-img-wrap fade-in">
+          <div class="about-img-frame">
+            <img src="src/assets/portfolio/Gray Headshot.png" alt="Dennis Favour" class="about-img" loading="lazy" />
+          </div>
+          <div class="about-img-cap">Dennis Favour · Abuja, Nigeria</div>
         </div>
-    </nav>
-    <main>
-        <!-- Hero Section -->
-        <section id="hero" class="hero-section">
-            <header class="hero-text">
-                <h1>Hi, I'm Favour!</h1>
-                <p class="hero-subtitle">Full Stack Developer and App Creator</p>
-                <p class="section-intro">
-                    I design and build digital experiences that are fast, reliable, and built to last. With a sharp focus on clean code and real-world results, I bring a disciplined, user-first approach to every project.
-                </p>
-                
-                <div class="hero-links">
-                    <a href="#projects" class="btn primary-btn">
-                        <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
-                        <span>View my Projects</span>
-                    </a>
-                    <a href="#contact" class="btn secondary-btn">
-                        <i class="fas fa-envelope" aria-hidden="true"></i>
-                        <span>Contact</span>
-                    </a>
-                </div>
-            </header>
-        </section>
+      </div>
+    </div>
+  </section>
 
-        <!-- About Section -->
-        <section id="about" class="about-section fade-in" >
-            <h2 class="section-title">About Me</h2>
-            <article class="about-content">
-                <div class="about-text">
-                    <p>
-                        I'm a passionate Full Stack Developer with a knack for creating dynamic and responsive web applications. I specialize in building user-friendly interfaces and robust backends, ensuring a seamless experience for users.
-                    </p>
-                    <br>
-                    <p>
-                        I specialize in crafting dynamic interfaces with <span class="skill-highlight">JavaScript</span> and <span class="skill-highlight">React</span>, building scalable backends in <span class="skill-highlight">Node.js</span>, and developing cross-platform mobile apps using <span class="skill-highlight">React Native</span>. My approach is always user-first, focusing on solving the right problems the right way.
-                    </p>
-                </div>
-                <div class="about-photo">
-                    <div class="profile-card">
-                        <img src="src/assets/portfolio-images/Gray Headshot 2 - Edited.webp"
-                             alt="Portrait of Favour Dennis Full Stack Developer"
-                             loading="lazy"
-                             width="500"
-                             height="300">
-                    </div>
-                </div>
-            </article>
-        </section>
+  <!-- ── CAPABILITIES ───────────────────────────────────────────── -->
+  <section class="section capabilities" id="capabilities">
+    <div class="container">
+      <div class="section-label">// What I do</div>
+      <h2 class="section-heading fade-in">CAPABILITIES<span class="gold">.</span></h2>
+      <div class="cap-grid">
+        <div class="cap-card fade-in">
+          <div class="cap-num">01</div>
+          <h3 class="cap-title">Full Stack Web Engineering</h3>
+          <p class="cap-desc">I build web applications end to end. Schema design, API routes, UI, authentication, deployment — in a single coherent codebase.</p>
+        </div>
+        <div class="cap-card fade-in">
+          <div class="cap-num">02</div>
+          <h3 class="cap-title">API & Backend Architecture</h3>
+          <p class="cap-desc">Type-safe APIs with tRPC, authentication flows, request middleware. Code that's predictable and debuggable, not just code that works once.</p>
+        </div>
+        <div class="cap-card fade-in">
+          <div class="cap-num">03</div>
+          <h3 class="cap-title">Database Design</h3>
+          <p class="cap-desc">PostgreSQL schemas with Prisma, migrations, and query performance considerations before they become problems. Most of my production work runs on Supabase.</p>
+        </div>
+        <div class="cap-card fade-in">
+          <div class="cap-num">04</div>
+          <h3 class="cap-title">AI Feature Integration</h3>
+          <p class="cap-desc">I've built AI features into production apps: resume analysis, interview prep, intelligent search. Integrated cleanly into existing data flows via Groq and Llama models.</p>
+        </div>
+        <div class="cap-card fade-in">
+          <div class="cap-num">05</div>
+          <h3 class="cap-title">Developer Tooling</h3>
+          <p class="cap-desc">I've published a browser extension to the Firefox Add-ons store. I build tools when the workflow is broken and nothing off-the-shelf fits.</p>
+        </div>
+        <div class="cap-card fade-in">
+          <div class="cap-num">06</div>
+          <h3 class="cap-title">Deployment & Infrastructure</h3>
+          <p class="cap-desc">Vercel, GitHub CI/CD, environment management. I handle the full deployment side of my projects and know what breaks between local and production.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <!-- Services Section -->
-        <section id="services" class="services-section fade-in">
-            <h2 class="section-title">My Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-code" aria-hidden="true"></i>
-                    </div>
-                    <h3>Full Stack Development</h3>
-                    <p>End-to-end web application development using modern technologies like React, Node.js, and MongoDB. From responsive frontends to scalable backends, I deliver complete solutions that perform flawlessly across all devices.</p>
-                </div>
+  <!-- ── PROJECTS ───────────────────────────────────────────────── -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-label">// Selected work</div>
+      <h2 class="section-heading fade-in">PROJECTS<span class="gold">.</span></h2>
+      <div class="projects-grid">
 
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-mobile-alt" aria-hidden="true"></i>
-                    </div>
-                    <h3>Mobile App Development</h3>
-                    <p>Cross-platform mobile applications built with React Native that provide native performance and user experience. Your app will work seamlessly on both iOS and Android with a single codebase.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-cloud" aria-hidden="true"></i>
-                    </div>
-                    <h3>Deployment & Hosting</h3>
-                    <p>Professional deployment solutions using industry-standard platforms like Vercel, Netlify, and AWS. Your applications will be fast, secure, and scalable with continuous integration and automated deployments.</p>
-                </div>
+        <!-- Billet -->
+        <div class="proj-card fade-in">
+          <div class="proj-front">
+            <div class="proj-idx">01</div>
+            <div class="proj-name">BILLET<span class="gold">.</span></div>
+            <div class="proj-peek">Next.js · tRPC · Groq AI</div>
+          </div>
+          <div class="proj-overlay">
+            <div class="proj-overlay-inner">
+              <div class="proj-overlay-head">
+                <span class="proj-overlay-name">Billet.</span>
+                <a href="https://billet-ng.vercel.app" target="_blank" rel="noopener" class="proj-live">Live ↗</a>
+              </div>
+              <p class="proj-overlay-desc">A job tracking tool I built and shipped. Kanban board, AI resume analysis via Groq, Gmail import to pull in job emails, Google Calendar sync for interviews, and a browser extension that auto-fills job details from LinkedIn, Indeed, and five other job boards.</p>
+              <div class="proj-tags">
+                <span>Next.js 15</span><span>TypeScript</span><span>tRPC</span>
+                <span>Prisma</span><span>Supabase</span><span>Groq AI</span>
+              </div>
+              <div class="proj-links">
+                <a href="https://billet-ng.vercel.app" target="_blank" rel="noopener" class="proj-btn">Live Site →</a>
+                <a href="https://github.com/KingGray034/Billet." target="_blank" rel="noopener" class="proj-btn-ghost">GitHub</a>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
 
-        <!-- Projects Section -->
-        <section id="projects" class="projects-section fade-in">
-            <h2 class="section-title">Projects</h2>
-            <div class="section-intro">
-                <p>Here's a gallery of my work, explore and enjoy.<br> Hover over each project to learn more about the technologies used and see the live demos.</p>
+        <!-- NudgePal -->
+        <div class="proj-card fade-in">
+          <div class="proj-front proj-front--green">
+            <div class="proj-idx">02</div>
+            <div class="proj-idx-badge">In Progress</div>
+            <div class="proj-name">NUDGEPAL<span class="gold">.</span></div>
+            <div class="proj-peek">Next.js · Supabase · AI</div>
+          </div>
+          <div class="proj-overlay">
+            <div class="proj-overlay-inner">
+              <div class="proj-overlay-head">
+                <span class="proj-overlay-name">NudgePal.</span>
+                <span class="proj-status">In Progress</span>
+              </div>
+              <p class="proj-overlay-desc">A personal assistant for people who struggle with standard reminder apps. It adapts its nudges based on how you actually respond, rather than just firing alerts on a timer. Built for neurodivergent users.</p>
+              <div class="proj-tags">
+                <span>Next.js</span><span>Tailwind CSS</span><span>Zustand</span>
+                <span>Supabase</span><span>React Native</span>
+              </div>
+              <div class="proj-links">
+                <a href="https://github.com/KingGray034" target="_blank" rel="noopener" class="proj-btn-ghost">GitHub</a>
+              </div>
             </div>
-            <div class="projects-grid" id="projectsGrid">
-                <!-- Project cards will be dynamically inserted here -->
+          </div>
+        </div>
+
+        <!-- Placeholder -->
+        <div class="proj-coming fade-in">
+          <span class="proj-coming-label">More work shipping soon</span>
+          <span class="proj-coming-sig">G.</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ────────────────────────────────────────────────── -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-label">// Get in touch</div>
+      <div class="contact-grid">
+        <div class="contact-left fade-in">
+          <h2 class="section-heading">LET'S<br>BUILD<span class="gold">.</span></h2>
+          <p class="contact-sub">Working on something and need an engineer? Or just want to talk through an idea? Either way.</p>
+          <div class="contact-channels">
+            <div class="channel">
+              <span class="channel-label">Email</span>
+              <a href="mailto:dennis.s.favour@gmail.com" class="channel-val">dennis.s.favour@gmail.com</a>
             </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section fade-in">
-            <h2 class="section-title">Let's Connect</h2>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <p class="section-intro contact-intro">Ready to bring your ideas to life? I'm passionate about creating digital experiences that make a difference. <br> Whether you have a project in mind or just want to discuss possibilities, I'd love to hear from you.</p>
-
-                    <div class="contact-card">
-                        <div class="contact-card-header">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope" aria-hidden="true"></i>
-                            </div>
-                            <h3>Email Me</h3>
-                        </div>
-                        <p>Drop me a line and I'll get back to you within 24 hours</p>
-                        <a href="mailto:dennis.s.favour@gmail.com">dennis.s.favour@gmail.com</a>
-                    </div>
-
-                    <div class="contact-card">
-                        <div class="contact-card-header">
-                            <div class="contact-icon">
-                                <i class="fab fa-linkedin"></i>
-                            </div>
-                            <h3>Let's Connect</h3>
-                        </div>
-                        <p>Connect with me professionally and stay updated with my journey</p>
-                        <a href="https://linkedin.com/in/favour-dennis-10923b350/" target="_blank">LinkedIn Profile</a>
-                    </div>
-
-                    <div class="contact-card">
-                        <div class="contact-card-header">
-                            <div class="contact-icon">
-                                <i class="fas fa-calendar-alt"></i>
-                            </div>
-                            <h3>Schedule a Call</h3>
-                        </div>
-                        <p>Prefer to talk? Let's schedule a call to discuss your project in detail</p>
-                        <a href="#" onclick="return false;">Coming Soon</a>
-                    </div>
-                </div>
-                <div class="contact-form-container">
-                    <div class="form-content">
-                        <h3 class="form-title">Send a Message</h3>
-                        <p class="form-subtitle">Tell me about your project and let's create something amazing together!</p>
-
-                        <form id="contactForm">
-                            <div class="form-group">
-                                <label for="name">Your Name</label>
-                                <div class="input-wrapper">
-                                    <input type="text" id="name" name="name" required>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="email">Email Address</label>
-                                <div class="input-wrapper">
-                                    <input type="email" id="email" name="email" required>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="project">Project Type</label>
-                                <div class="input-wrapper">
-                                    <select name="project" id="project" required>
-                                        <option value="" disabled selected>Select project type</option>
-                                        <option value="web-app">Web Application</option>
-                                        <option value="mobile-app">Mobile Application</option>
-                                        <option value="full-stack">Full Stack Development</option>
-                                        <option value="consultation">Consultation</option>
-                                        <option value="other">Other</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="message">Project Details</label>
-                                <div class="input-wrapper">
-                                    <textarea name="message" id="message" placeholder="Tell me about your vision, requirements, timeline, or any questions you have..." required></textarea>
-                                </div>
-                            </div>
-
-                            <button type="submit" class="submit-btn">
-                                <span>Send Message</span>
-                            </button>
-                        </form>
-
-                        <div id="formMessage" class="form-message" role="alert" aria-live="polite"></div>
-                    </div>
-                </div>
+            <div class="channel">
+              <span class="channel-label">GitHub</span>
+              <a href="https://github.com/KingGray034" target="_blank" rel="noopener" class="channel-val">@KingGray034</a>
             </div>
-        </section>
-
-        <footer class="footer">
-            <!-- Animated Background with Seamless Waves -->
-            <div class="wave-container">
-                <svg viewBox="0 0 2400 120" preserveAspectRatio="none">
-                    <defs>
-                        <path id="wavePath1" d="M0,70 Q150,40 300,70 T600,70 T900,70 T1200,70 T1500,70 T1800,70 T2100,70 T2400,70 V120 H0 Z" />
-                        <path id="wavePath2" d="M0,80 Q150,100 300,80 T600,80 T900,80 T1200,80 T1500,80 T1800,80 T2100,80 T2400,80 V120 H0 Z" />
-                        <path id="wavePath3" d="M0,85 Q150,50 300,85 T600,85 T900,85 T1200,85 T1500,85 T1800,85 T2100,85 T2400,85 V120 H0 Z" />
-                    </defs>
-
-
-                    <use href="#wavePath1" class="wave1"></use>
-                    <use href="#wavePath2" class="wave2"></use>
-                    <use href="#wavePath3" class="wave3"></use>
-                </svg>
+            <div class="channel">
+              <span class="channel-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/dennis-favour/" target="_blank" rel="noopener" class="channel-val">Dennis Favour</a>
             </div>
-
-            <div class="footer-content">
-            <div class="footer-main">
-                <!-- Brand Section -->
-                <div class="footer-brand">
-                <h3 class="footer-logo">Dennis Favour</h3>
-                <p class="footer-tagline">
-                    Crafting Digital Experiences with Code and Creativity
-                </p>
-                <div class="social-links">
-                    <a href="https://github.com/KingGray034" class="social-link" target="_blank" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://linkedin.com/in/favour-dennis-10923b350/" class="social-link" target="_blank" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://x.com/HeisGrayy" class="social-link" target="_blank" aria-label="Twitter">
-                        <i class="fab fa-x-twitter"></i>
-                    </a>
-                    <a href="mailto:dennis.s.favour@gmail.com" class="social-link" aria-label="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-                </div>
-
-                    <!-- Quick Links -->
-                <div class="footer-quick-links">
-                <h4>Navigation</h4>
-                <div class="footer-links">
-                    <a href="#about">About Me</a>
-                    <a href="#services">Services</a>
-                    <a href="#projects">Projects</a>
-                </div>
-                </div>
-
-                <!-- Contact Info -->
-                <div class="footer-contact-info">
-                <h4>Let's Talk</h4>
-                <div class="footer-links">
-                    <a href="mailto:dennis.s.favour@gmail.com">dennis.s.favour@gmail.com</a>
-                    <a href="https://linkedin.com/in/favour-dennis-10923b350/" target="_blank">LinkedIn Profile</a>
-                </div>
-                </div>
+          </div>
+        </div>
+        <div class="contact-right fade-in">
+          <form class="contact-form" id="contactForm" action="https://formspree.io/f/meaqwwny" method="POST">
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name" />
             </div>
-            <div class="footer-bottom">
-                <div class="copyright">
-                    <p>&copy; 2025 Dennis Favour. All rights reserved.</p>
-                </div>
-                <div class="footer-meta">
-                    <div class="status-indicator">
-                        <div class="status-dot"></div>
-                        <span>Availabe for hire</span>
-                    </div>
-                    <span>Nigeria</span>
-                </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email" />
             </div>
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about the role or project..." required></textarea>
             </div>
-        </footer>
-    </main>
-    <script src="src/js/main.js" defer></script>
+            <button type="submit" class="btn btn-gold form-btn">Send Message →</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="footer-body">
+      <div class="footer-left">
+        <div class="footer-sig">G.</div>
+        <div class="footer-name">Dennis Favour</div>
+        <div class="footer-sub">Full Stack Engineer · Abuja, Nigeria</div>
+      </div>
+      <div class="footer-center">
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#about">About</a>
+          <a href="#capabilities">Capabilities</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-right">
+        <div class="footer-avail">
+          <span class="avail-dot" aria-hidden="true"></span>
+          Available for hire
+        </div>
+        <div class="footer-socials">
+          <a href="https://github.com/KingGray034" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/dennis-favour/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://x.com/HeisGrayy" target="_blank" rel="noopener">Twitter</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Dennis Favour. All rights reserved.</span>
+      <span>Built with intent. G.</span>
+    </div>
+  </footer>
+
+  <script src="src/js/main.js"></script>
 </body>
 </html>
